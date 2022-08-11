@@ -26,14 +26,25 @@ addItem.style.color="green"
 
 
 //tagName
-var li = document.getElementsByTagName('li');
+// var li = document.getElementsByTagName('li');
 
+// console.log(li)
+
+// li[1].textContent = "Hello 2";
+// li[1].style.fontWeight = "bold";
+// li[1].style.backgroundColor = 'yellow'
+
+// for(let i=0;i<li.length;i++){
+//      li[i].style.backgroundColor="#f4f4f4";
+//  }
+
+//QuerySelector//
+
+// var header = document.querySelector('#main-header');
+// header.getElementsByClassName.borderBottom = 'solid 4px #ccc'
+
+
+var li = document.querySelectorAll('li');
 console.log(li)
 
-li[1].textContent = "Hello 2";
-li[1].style.fontWeight = "bold";
-li[1].style.backgroundColor = 'yellow'
-
-for(let i=0;i<li.length;i++){
-     li[i].style.backgroundColor="#f4f4f4";
- }
+li[1].style.backgroundColor("green")
