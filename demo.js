@@ -1,1 +1,1 @@
-console.log("i love git anymore")
+console.dir("document")
