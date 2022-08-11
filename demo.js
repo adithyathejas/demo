@@ -44,7 +44,29 @@ addItem.style.color="green"
 // header.getElementsByClassName.borderBottom = 'solid 4px #ccc'
 
 
-var li = document.querySelectorAll('li');
-console.log(li)
 
-li[1].style.backgroundColor("green")
+
+// var submit = document.querySelector('input[type="submit"]')
+// submit.value="send"
+
+
+// var item = document.querySelector('.list-group-item:nth-child(2)');
+// item.style.backgroundColor = 'green'
+
+// var item = document.querySelector('.list-group-item:nth-child(3)');
+// item.style.display = 'none'
+
+//querySelectorAll//
+
+var titles = document.querySelectorAll('.title')
+console.log(titles)
+
+// var li = document.querySelectorAll('li');
+// li[1].style.backgroundColor="green"
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+
+for(i=0;i<odd.length;i++){
+    odd[i].style.backgroundColor="green"
+}
+
