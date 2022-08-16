@@ -63,18 +63,19 @@ function filterItems(e){
     //convert text to lower
     var text = e.target.value.toLowerCase()
     var item = itemList.getElementsByTagName('li');
+    var text2 = " "
     
     Array.from(item).forEach(item => {
         var itemName = item.firstChild.textContent
         var desc = item.getElementsByTagName('dl')
         // console.log("aaaaa",desc)
         if(desc.length != 0){
-            let text2 = desc
-            console.log("value",text2)
+             text2 = desc[0].firstChild.textContent
+            
         }
  
-        if(itemName.toLowerCase().indexOf(text) != -1 ){
-           {}
+        if(itemName.toLowerCase().indexOf(text) != -1 || text2.toLowerCase().indexOf(text) != -1){
+           
             item.style.display = 'block'
         }
         else{
